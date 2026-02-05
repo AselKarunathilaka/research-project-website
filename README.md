@@ -102,35 +102,6 @@ No build tools required 🎉
 
 ---
 
-## 🌐 Deploy Using GitHub Pages
-
-You can deploy this website for free using GitHub Pages:
-
-1. Push the project to GitHub  
-2. Go to **Repository → Settings → Pages**  
-3. Under **Source**, select:
-   - Branch → main  
-   - Folder → / (root)  
-4. Click **Save**
-
-Your live site will be:
-
-    https://AselKarunathilaka.github.io/research-project-website
-
----
-
-## 🛠️ How to Update the Website
-
-Whenever you edit the website:
-
-    git add .
-    git commit -m "Update website"
-    git push
-
-GitHub Pages will automatically update the live site.
-
----
-
 ## 🧰 Technologies Used
 
 ### 🌐 Frontend
@@ -165,3 +136,4 @@ Sri Lanka Institute of Information Technology (SLIIT)
 ---
 
 © 2025 WILDGuard Research Team — SLIIT
+
