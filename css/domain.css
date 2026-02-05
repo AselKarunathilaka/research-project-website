@@ -1,0 +1,145 @@
+/* Domain Section Styles */
+.domain {
+    background-color: #fff;
+    padding: 80px 0;
+    position: relative;
+}
+
+.domain-tabs {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.domain-tab {
+    padding: 10px 20px;
+    background-color: #f4f7fd;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: var(--transition-fast);
+    margin: 5px;
+    border: 1px solid #e1e1e1;
+}
+
+.domain-tab.active {
+    background-color: var(--primary-color);
+    color: white;
+    box-shadow: var(--shadow-sm);
+}
+
+.domain-tab:hover:not(.active) {
+    background-color: #e1e7f5;
+    transform: translateY(-3px);
+}
+
+.domain-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    min-height: 400px;
+}
+
+.domain-pane {
+    display: none;
+}
+
+.domain-pane.active {
+    display: block;
+    animation: fadeIn 0.5s ease-in-out;
+    will-change: transform, opacity;
+    contain: content;
+}
+
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.domain-pane h3 {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.domain-pane p {
+    margin-bottom: 15px;
+    line-height: 1.7;
+    color: var(--text-light);
+}
+
+.domain-pane ul {
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+.domain-pane ul li {
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 20px;
+    list-style-type: none;
+}
+
+.domain-pane ul li::before {
+    content: '•';
+    color: var(--primary-color);
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+.domain-image {
+    width: 100%;
+    max-width: 800px;
+    margin: 30px auto;
+    display: block;
+    border-radius: 8px;
+    box-shadow: var(--shadow-sm);
+}
+
+.domain-section {
+    margin-bottom: 30px;
+}
+
+.domain-section h4 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .domain-tab {
+        padding: 8px 15px;
+        font-size: 0.9rem;
+    }
+    
+    .domain-content {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .domain-tabs {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .domain-tab {
+        width: 100%;
+        text-align: center;
+    }
+}

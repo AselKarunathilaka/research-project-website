@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>WILDGuard - IoT-Based Real-Time Monkey Detection & Deterrence System</title>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/domain.css"/>
+    <link rel="stylesheet" href="css/enhanced-sections.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo-container">
+                <h1 class="logo">WILDGuard</h1>
+                <span class="logo-accent">Agri-IoT</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#components">Components</a></li>
+                <li><a href="#domain">Domain</a></li>
+                <li><a href="#technologies">Technologies</a></li>
+                <li><a href="#documents">Documents</a></li>
+                <li><a href="#milestones">Milestones</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="particles-container" id="particles-js"></div>
+        <div class="container">
+            <div class="hero-content" data-aos="fade-up" data-aos-delay="200">
+                <h1 class="animated-title">WILDGuard</h1>
+                <h2>IoT-Based Real-Time Monkey Detection & Deterrence System</h2>
+                <p>Protecting coconut farms with low-cost IoT detection, humane deterrence, and resilient rural connectivity.</p>
+                <div class="hero-buttons">
+                    <a href="#about" class="btn btn-primary">Learn More</a>
+                    <a href="#technologies" class="btn btn-secondary">Our Technology</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>About WILDGuard</h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle">A scalable, IoT solution for crop protection</p>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-image" data-aos="fade-right" data-aos-delay="100">
+                    <img src="img/about1.png" alt="Coconut plantation monitoring by IoT sensors"/>
+                    <div class="about-image-overlay">
+                        <div class="pulse-circle"></div>
+                    </div>
+                </div>
+                
+                <div class="about-text" data-aos="fade-left" data-aos-delay="200">
+                    <p>Monkey depredation causes massive losses in Sri Lankan coconut plantations (hundreds of millions of coconuts annually). WILDGuard is built to reduce crop damage by automatically detecting monkey presence and activating humane deterrents — all via a low-cost, battery-efficient IoT network.</p>
+                    
+                    <p>Designed for rural deployment, the system uses motion, ultrasonic and thermal sensing combined with edge analytics to discriminate monkeys from other animals and false alarms. When a confirmed detection occurs, WILDGuard triggers a staged deterrence response (ultrasound, flashing lights, laser pulses) and logs activity for farmer review.</p>
+                    
+                    <div class="about-features">
+                        <div class="feature">
+                            <i class="fas fa-bullseye"></i>
+                            <span>Accurate Detection</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-bolt"></i>
+                            <span>Automated Deterrence</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-network-wired"></i>
+                            <span>Resilient LoRaWAN Mesh</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-chart-line"></i>
+                            <span>Monitoring & Analytics</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Components Section -->
+    <section id="components" class="components">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Project Components</h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle">Subsystems that work together in the field</p>
+            </div>
+            
+            <div class="component-grid">
+                <div class="component-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="component-icon">
+                        <i class="fas fa-camera"></i>
+                    </div>
+                    <h3>Detection Subsystem</h3>
+                    <p>Edge detection and sensor fusion to reliably identify monkeys in the plantation.</p>
+                    <ul class="component-features">
+                        <li><i class="fas fa-check-circle"></i> Multi Class Model</li>
+                        <li><i class="fas fa-check-circle"></i> YOLOV8s Model for detection</li>
+                        <li><i class="fas fa-check-circle"></i> Multiframe classification to reduce false positives</li>
+                        <li><i class="fas fa-check-circle"></i> Low-power sampling for long battery life</li>
+                    </ul>
+                </div>
+                
+                <div class="component-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="component-icon">
+                        <i class="fas fa-volume-up"></i>
+                    </div>
+                    <h3>Deterrence Subsystem</h3>
+                    <p>Multi-modal, humane deterrents automatically triggered upon confirmed detection.</p>
+                    <ul class="component-features">
+                        <li><i class="fas fa-check-circle"></i> Ultrasonic sound emitters</li>
+                        <li><i class="fas fa-check-circle"></i> Flashing LED arrays / strobes</li>
+                        <li><i class="fas fa-check-circle"></i> Low-power laser pulses (non-harmful)</li>
+                        <li><i class="fas fa-check-circle"></i> Staged escalation to minimize disturbance</li>
+                    </ul>
+                </div>
+                
+                <div class="component-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="component-icon">
+                        <i class="fas fa-satellite-dish"></i>
+                    </div>
+                    <h3>IoT Communication</h3>
+                    <p>Reliable long-range communication tailored for remote farms.</p>
+                    <ul class="component-features">
+                        <li><i class="fas fa-check-circle"></i> LoRa for long-range, low-power comms</li>
+                        <li><i class="fas fa-check-circle"></i> Custom Multi-hop routing & retry mechanisms</li>
+                        <li><i class="fas fa-check-circle"></i> ESP32-based gateway & Relay node</li>
+                        <li><i class="fas fa-check-circle"></i> Fault-Tolarant Data transmission Design</li>
+                    </ul>
+                </div>
+                
+                <div class="component-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="component-icon">
+                        <i class="fas fa-chart-pie"></i>
+                    </div>
+                    <h3>Monitoring & Optimization</h3>
+                    <p>Dashboarding and analytics to refine deterrence strategies and measure impact.</p>
+                    <ul class="component-features">
+                        <li><i class="fas fa-check-circle"></i> Real-time activity heatmaps</li>
+                        <li><i class="fas fa-check-circle"></i> Deterrent performance metrics</li>
+                        <li><i class="fas fa-check-circle"></i> Predictive Analysis</li>
+                        <li><i class="fas fa-check-circle"></i> Data-driven optimization of thresholds</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Domain Section -->
+<section id="domain" class="domain">
+  <div class="container">
+    <div class="section-header" data-aos="fade-up">
+      <h2>Project Domain</h2>
+      <div class="section-divider"></div>
+      <p class="section-subtitle">Research, design, and field deployment details</p>
+    </div>
+
+    <div class="domain-tabs" data-aos="fade-up" data-aos-delay="100">
+      <div class="domain-tab active" data-target="literature-review">Literature Review</div>
+      <div class="domain-tab" data-target="research-problem">Research Problem</div>
+      <div class="domain-tab" data-target="objectives">Objectives</div>
+      <div class="domain-tab" data-target="methodology">Methodology</div>
+      <div class="domain-tab" data-target="research-gap">Research Gap</div>
+    </div>
+
+    <div class="domain-content">
+      <!-- Literature Review Tab -->
+      <div id="literature-review" class="domain-pane active">
+        <h3>🧩 1. Literature Review</h3>
+        <p>
+          Coconut farming in Sri Lanka has been severely impacted by wildlife, particularly monkeys such as the toque macaque.
+          Studies show that nearly <strong>7% of the annual coconut yield</strong> is lost due to animal interference, resulting in
+          economic losses exceeding <strong>USD 19 million annually</strong>. Previous research highlights that these animals act out of
+          survival instincts rather than intentional destruction, making humane deterrence crucial.
+        </p>
+        <p>
+          Recent IoT-based approaches, including smart surveillance, thermal imaging, and machine learning-based animal
+          classification, have shown promise. However, existing systems often suffer from high cost, limited rural connectivity, and
+          poor real-time performance. Research by Muthumani (2023) and A.S.S et al. (2024) demonstrates the feasibility of
+          IoT-based animal detection but emphasizes the need for low-power, scalable, and sustainable solutions adaptable to
+          Sri Lanka’s agricultural landscape.
+        </p>
+      </div>
+
+      <!-- Research Problem Tab -->
+      <div id="research-problem" class="domain-pane">
+        <h3>💡 2. Research Problem</h3>
+        <p>
+          Coconut plantations across 21 districts face continuous destruction caused by monkeys, leading to reduced yield and
+          financial instability among rural farmers. Despite attempts using traditional deterrents (e.g., scarecrows, firecrackers),
+          these methods are ineffective, inconsistent, and sometimes harmful.
+        </p>
+        <p>
+          There is a lack of an automated, eco-friendly, and affordable system capable of detecting monkey presence in real time
+          and responding with humane deterrent mechanisms. Therefore, the problem addressed by this research is:
+        </p>
+        <blockquote>
+          “How can an IoT-based real-time system detect and deter monkeys in coconut plantations effectively while ensuring
+          safety, sustainability, and affordability for local farmers?”
+        </blockquote>
+      </div>
+
+      <!-- Objectives Tab -->
+      <div id="objectives" class="domain-pane">
+        <h3>🎯 3. Objectives</h3>
+
+        <div class="domain-section">
+          <h4>3.1 Main Objective</h4>
+          <ul>
+            <li>
+              Design and deploy <strong>WILDGuard</strong> — an IoT-based detection and deterrence system to reduce
+              monkey-related damage in coconut plantations while remaining humane and cost-effective.
+            </li>
+          </ul>
+        </div>
+
+        <div class="domain-section">
+          <h4>3.2 Sub-Objectives</h4>
+          <ul>
+            <li>Implement multimodal detection using motion, ultrasonic, and thermal sensors.</li>
+            <li>Develop edge classification algorithms to minimize false positives.</li>
+            <li>Design a staged, humane deterrence actuator suite (ultrasound, lights, lasers).</li>
+            <li>Implement resilient LoRaWAN communication with multi-hop and retry mechanisms.</li>
+            <li>Provide farmer dashboards with heatmaps and actionable metrics.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Methodology Tab -->
+      <div id="methodology" class="domain-pane">
+        <h3>🧠 4. Methodology</h3>
+        <ul>
+          <li><strong>Requirement Analysis:</strong> Study monkey behavior, environmental conditions, and farmer needs.</li>
+          <li>
+            <strong>System Design:</strong>
+            <ul>
+              <li><em>Hardware:</em> PIR sensors, ultrasonic sensors, thermal cameras, LoRa modules.</li>
+              <li><em>Software:</em> YOLO-based detection, edge classification, dashboard visualization.</li>
+            </ul>
+          </li>
+          <li><strong>Prototype Development:</strong> Integrate detection, deterrent, communication, and power subsystems.</li>
+          <li>
+            <strong>Testing:</strong> Field trials in coconut farms to evaluate detection accuracy, deterrent success rate, and energy efficiency.
+          </li>
+          <li>
+            <strong>Evaluation:</strong> Collect quantitative performance data and qualitative farmer feedback for continuous system optimization.
+          </li>
+        </ul>
+
+        <!-- Keep/replace this image as needed -->
+        <img src="img/graph2.png" alt="WILDGuard Methodology Diagram" class="domain-image" />
+      </div>
+
+      <!-- Research Gap Tab -->
+      <div id="research-gap" class="domain-pane">
+        <h3>🔍 5. Research Gap</h3>
+        <p>
+          While previous studies introduced IoT-based animal detection systems, most lacked comprehensive deterrence, real-time
+          responsiveness, or low-power communication suitable for rural areas. Few solutions combine machine learning,
+          LoRaWAN, and renewable energy into a single framework.
+        </p>
+        <p>
+          The WILDGuard project bridges this gap by delivering an integrated, humane, and data-driven system that empowers
+          farmers through accessible technology and real-time insights.
+        </p>
+
+        <!-- Optional illustration -->
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- Technologies Section -->
+    <section id="technologies" class="technologies">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Technologies</h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle">Hardware, networking & software stack</p>
+            </div>
+            
+            <div class="tech-slider swiper" data-aos="fade-up" data-aos-delay="200">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="tech-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python"/>
+                            <h3>Python</h3>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="tech-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/micropython/micropython-original.svg" alt="MicroPython"/>
+                            <h3>MicroPython</h3>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="tech-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/arduino/arduino-original.svg" alt="ESP32/Arduino"/>
+                            <h3>ESP32</h3>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="tech-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/lorawan/lorawan-original.svg" alt="LoRaWAN" onerror="this.style.display='none'"/>
+                            <h3>LoRa</h3>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="tech-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node-RED"/>
+                            <h3>Node-RED</h3>
+                        </div>
+                    </div>
+                    
+                    <div class="swiper-slide">
+                        <div class="tech-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React"/>
+                            <h3>React</h3>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="tech-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker"/>
+                            <h3>Docker</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+            
+            <div class="tech-features" data-aos="fade-up" data-aos-delay="300">
+                <div class="tech-feature">
+                    <div class="tech-feature-icon">
+                        <i class="fas fa-satellite-dish"></i>
+                    </div>
+                    <div class="tech-feature-content">
+                        <h3>Robust Rural Networking</h3>
+                        <p>Multi-hop LoRaWAN and gateway buffering for intermittent connectivity</p>
+                    </div>
+                </div>
+                
+                <div class="tech-feature">
+                    <div class="tech-feature-icon">
+                        <i class="fas fa-microchip"></i>
+                    </div>
+                    <div class="tech-feature-content">
+                        <h3>Edge Intelligence</h3>
+                        <p>On-node preprocessing to minimize transmissions and battery use</p>
+                    </div>
+                </div>
+                
+                <div class="tech-feature">
+                    <div class="tech-feature-icon">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <div class="tech-feature-content">
+                        <h3>Farmer-Centric Analytics</h3>
+                        <p>Heatmaps, event logs and simple alerts to support decisions</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Documents Section -->
+    <section id="documents" class="documents enhanced-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Documents</h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle">Project materials & deliverables</p>
+            </div>
+            
+            <div class="document-cards" data-aos="fade-up" data-aos-delay="200">
+                <div class="document-card">
+                    <div class="document-card-image">
+                        <div class="document-card-icon">
+                            <i class="fas fa-file-pdf"></i>
+                        </div>
+                        <div class="document-card-date">May 2025</div>
+                    </div>
+                    <div class="document-card-content">
+                        <h3 class="document-card-title">Research Paper</h3>
+                        <p class="document-card-description">Comprehensive research detailing system design, methodology, deployment results and recommendations.</p>
+                        <a href="https://drive.google.com/drive/folders/1jlP_-6XsbTSDEo6XFJlbmDM9Ax7peCIQ?usp=drive_link" class="document-card-link">Download PDF <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <div class="document-card">
+                    <div class="document-card-image">
+                        <div class="document-card-icon">
+                            <i class="fas fa-file-alt"></i>
+                        </div>
+                        <div class="document-card-date">April 2025</div>
+                    </div>
+                    <div class="document-card-content">
+                        <h3 class="document-card-title">Proposal Documents</h3>
+                        <p class="document-card-description">Project proposal, charter and early design notes for WILDGuard deployment.</p>
+                        <a href="https://drive.google.com/drive/folders/1_EKQfUYAMR37Ue_ARMQ7oc3ZHUaYUkeG?usp=drive_link" class="document-card-link">View Documents <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <div class="document-card">
+                    <div class="document-card-image">
+                        <div class="document-card-icon">
+                            <i class="fas fa-file-code"></i>
+                        </div>
+                        <div class="document-card-date">March 2025</div>
+                    </div>
+                    <div class="document-card-content">
+                        <h3 class="document-card-title">Final Reports</h3>
+                        <p class="document-card-description">Final thesis, progress reports and technical appendices from field testing and evaluation.</p>
+                        <a href="https://drive.google.com/drive/folders/19yvnAJU5qzCyAp1tguow9pQybasjyK28?usp=drive_link" class="document-card-link">View Documents <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <div class="document-card">
+                    <div class="document-card-image">
+                        <div class="document-card-icon">
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <div class="document-card-date">February 2025</div>
+                    </div>
+                    <div class="document-card-content">
+                        <h3 class="document-card-title">Presentations</h3>
+                        <p class="document-card-description">Proposal and progress presentations covering design, field tests and impact estimates.</p>
+                        <a href="https://drive.google.com/drive/folders/1rFONpdlpKChdk9XJUfu7NSU-IDUggZs7?usp=drive_link" class="document-card-link">View Presentations <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Milestones Section -->
+    <section id="milestones" class="milestones enhanced-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Milestones</h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle">Project timeline & achievements</p>
+            </div>
+            
+            <div class="milestone-timeline" data-aos="fade-up" data-aos-delay="200">
+                <div class="milestone-item">
+                    <div class="milestone-content">
+                        <div class="milestone-date">January 2025</div>
+                        <h3 class="milestone-title">Project Initialization</h3>
+                        <p class="milestone-description">Research planning, stakeholder interviews, and baseline crop-loss analysis.</p>
+                        <span class="milestone-status status-completed">Completed</span>
+                    </div>
+                    <div class="milestone-dot"></div>
+                </div>
+                
+                <div class="milestone-item">
+                    <div class="milestone-content">
+                        <div class="milestone-date">February 2025</div>
+                        <h3 class="milestone-title">Design & Prototyping</h3>
+                        <p class="milestone-description">Hardware selection, sensor fusion experiments, and prototype deterrent design.</p>
+                        <span class="milestone-status status-completed">Completed</span>
+                    </div>
+                    <div class="milestone-dot"></div>
+                </div>
+                
+                <div class="milestone-item">
+                    <div class="milestone-content">
+                        <div class="milestone-date">March 2025</div>
+                        <h3 class="milestone-title">Field Deployment</h3>
+                        <p class="milestone-description">Pilot deployment in sample plantations and initial data collection.</p>
+                        <span class="milestone-status status-completed">Completed</span>
+                    </div>
+                    <div class="milestone-dot"></div>
+                </div>
+
+                <div class="milestone-item">
+                    <div class="milestone-content">
+                        <div class="milestone-date">April 2025</div>
+                        <h3 class="milestone-title">Testing & Evaluation</h3>
+                        <p class="milestone-description">Performance evaluation, false-positive tuning, and optimization of deterrence strategy.</p>
+                        <span class="milestone-status status-in-progress">In Progress</span>
+                    </div>
+                    <div class="milestone-dot"></div>
+                </div>
+                
+                <div class="milestone-item">
+                    <div class="milestone-content">
+                        <div class="milestone-date">May 2025</div>
+                        <h3 class="milestone-title">Project Completion</h3>
+                        <p class="milestone-description">Final documentation, dissemination to stakeholders, and roadmap for scale-up.</p>
+                        <span class="milestone-status status-upcoming">Upcoming</span>
+                    </div>
+                    <div class="milestone-dot"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Team Section -->
+    <section id="team" class="team">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Team</h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle">Project leads & contributors</p>
+            </div>
+            
+            <div class="team-grid" data-aos="fade-up" data-aos-delay="200">
+                <div class="team-member">
+                    <div class="member-image">
+                        <img src="img/picture2.jpg" alt="Dr. Kapila Disanayake"/>
+                    </div>
+                    <h3>Ms. Chathurangika Kahandawaarachchi</h3>
+                    <p>Supervisor</p>
+                    <p class="member-title">Senior Lecturer, Sri Lanka Institute of Information Technology</p>
+                </div>
+                
+               
+                
+                <div class="team-member">
+                    <div class="member-image">
+                        <img src="img/picture3.jpg" alt="Dr. Jayan De Silva"/>
+                    </div>
+                    <h3>Mr. Jaliya Wijayaraja</h3>
+                    <p>External Supervisor</p>
+                </div>
+
+                <div class="team-member">
+                    <div class="member-image">
+                        <img src="img/picture4.jpg" alt="Arangallage C.M."/>
+                    </div>
+                    <h3>Jansingha S.D.J.K</h3>
+                    <p>Researcher (Detection)</p>
+                    <p class="member-title">B.Sc. (Hons) in Information Technology</p>
+                </div>
+                
+                <div class="team-member">
+                    <div class="member-image">
+                        
+                        <img src="img/asel.jpeg" alt="Polhengoda P.M.Y.Y."/>
+                    </div>
+                    <h3>KARUNATHILAKA K.W.A.A.S</h3>
+                    <p>Researcher (Deterrent)</p>
+                    <p class="member-title">B.Sc. (Hons) in Information Technology</p>
+                </div>
+                
+                <div class="team-member">
+                    <div class="member-image">
+                        <img src="img/geeth.jpg" alt="W.R.S Virukshi"/>
+                    </div>
+                    <h3>Wickramasinghe B.G.A</h3>
+                    <p>Researcher (IOT Communication)</p>
+                    <p class="member-title">B.Sc. (Hons) in Information Technology</p>
+                </div>
+                
+                <div class="team-member">
+                    <div class="member-image">
+                        <img src="img/thaarusha.jpeg" alt="Sandeeptha P.K."/>
+                    </div>
+                    <h3>Bandara D.M.E.K</h3>
+                    <p>Researcher (Monitoring)</p>
+                    <p class="member-title">B.Sc. (Hons) in Information Technology</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section id="contact" class="contact enhanced-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Contact Us</h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle">Get in touch for collaboration or deployment</p>
+            </div>
+            
+            <div class="contact-wrapper" data-aos="fade-up" data-aos-delay="200">
+                <div class="contact-info">
+                    <div class="contact-info-item">
+                        <div class="contact-info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-info-content">
+                            <h3>Email Us</h3>
+                            <p><a href="mailto:WILDGuard@example.com">WILDGuard@example.com</a></p>
+                            <p><a href="mailto:research@WILDGuard.org">research@WILDGuard.org</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-info-item">
+                        <div class="contact-info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-info-content">
+                            <h3>Visit Us</h3>
+                            <p>SLIIT, New Kandy Road,</p>
+                            <p>Malabe, Sri Lanka</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-info-item">
+                        <div class="contact-info-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="contact-info-content">
+                            <h3>Call Us</h3>
+                            <p><a href="tel:+94117544801">+94 11 754 4801</a></p>
+                            <p><a href="tel:+94117544802">+94 11 754 4802</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <label for="name" class="form-label">Full Name</label>
+                            <input type="text" id="name" class="form-control" placeholder="Enter your name" required/>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email Address</label>
+                            <input type="email" id="email" class="form-control" placeholder="Enter your email" required/>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject" class="form-label">Subject</label>
+                            <input type="text" id="subject" class="form-control" placeholder="Enter subject" required/>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea id="message" class="form-control" placeholder="Enter your message" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 WILDGuard. All Rights Reserved.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/domain.js"></script>
+</body>
+</html>
