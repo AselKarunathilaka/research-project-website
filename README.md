@@ -1,139 +1,155 @@
-# WILDGuard – IoT-Based Real-Time Monkey Detection & Deterrence System 🌴🐒
+# WILDGuard Research Project Website
 
-This repository contains the official **research project website** for the **WILDGuard** system.
+WILDGuard is an IoT-based real-time monkey detection and humane deterrence system designed to protect coconut plantations in Sri Lanka.
 
-WILDGuard is an **IoT-based real-time monkey detection and deterrence solution** designed to protect coconut plantations in Sri Lanka using smart sensing, long-range communication, and humane deterrence mechanisms.
+This repository contains the public research project website, hosted with Netlify.
 
----
+## Project Overview
 
-## 🌍 Project Overview
+Monkey intrusions cause significant crop damage and financial losses for coconut farmers. WILDGuard combines edge intelligence, field sensors, long-range communication, automated deterrence, and farmer-facing analytics into one low-power protection system.
 
-Monkey intrusions cause major crop damage in Sri Lankan coconut plantations.  
-WILDGuard provides a **smart, automated and humane protection system** that detects monkey activity in real-time and triggers deterrence mechanisms while allowing farmers to monitor plantations remotely.
+### Core Objectives
 
-### 🎯 Key Objectives
-- Detect monkey intrusions in real time  
-- Reduce crop damage in coconut plantations  
-- Provide remote monitoring for farmers  
-- Use humane and non-harmful deterrence methods  
-- Build a scalable IoT-based smart agriculture solution  
+- Detect monkey intrusions in real time
+- Reduce false positives through sensor fusion and edge classification
+- Activate humane, non-harmful deterrence responses
+- Support long-range rural communication through LoRa
+- Provide useful alerts, activity records, and analytics for farmers
 
----
+## Website Redesign
 
-## 💡 System Architecture
+The website received a complete visual and technical overhaul in June 2026.
 
-The WILDGuard solution integrates **IoT hardware, communication networks, cloud processing and a web dashboard**.
+### New Visual Experience
 
-### 🧠 Hardware Layer
-- ESP32 microcontroller  
-- Motion sensors (PIR)  
-- Ultrasonic sensors  
-- Thermal sensors  
-- Ultrasonic sound deterrent  
-- Flashing LED deterrent  
-- Low-power laser deterrent  
+- Modern midnight-blue, cyan, green, and amber design system
+- Responsive research-focused hero section
+- Official WILDGuard shield-and-monkey logo and favicon
+- Pure CSS animated detection network replacing the previous system SVG
+- Animated scanning beam, network grid, connection rings, and data paths
+- Floating cards for edge vision, LoRa communication, deterrence, and analytics
+- Redesigned project cards, research tabs, documents, team, milestones, and contact sections
+- Improved team photo presentation without cropped faces
 
-### 📡 Communication Layer
-- **LoRaWAN** for long-range connectivity in rural areas  
+### Content Improvements
 
-### ⚙️ Backend & Processing
-- Node-RED for data flow automation  
-- MongoDB for data storage  
-- Python & MicroPython for edge processing  
+- All project milestones are marked as completed
+- Duplicate milestone timeline markers were removed
+- Methodology is presented as an Observe, Build, Test, and Optimize workflow
+- Broken image paths and case-sensitive Netlify asset references were corrected
+- Unreliable remote technology icons were replaced with stable interface elements
+- Research Project identification is shown prominently at the beginning of the page
 
-### 🖥️ Monitoring Dashboard
-- React-based web dashboard  
-- Real-time alerts & visualization  
-- Remote monitoring capability  
+### Technical Improvements
 
----
+- Responsive layouts for desktop, tablet, and mobile screens
+- Keyboard-accessible project-domain tabs
+- Accessible mobile navigation with ARIA state handling
+- Reduced-motion support for users who disable animations
+- Graceful behavior if the external animation library is unavailable
+- Netlify-compatible contact form handling
+- Active navigation states and improved smooth scrolling
+- Current footer year generated automatically
 
-## 🖥️ About This Repository
+## System Architecture
 
-This repository hosts the **single-page research project website** that includes:
+### Detection
 
-- Project overview  
-- Research domain & technologies  
-- Documents and presentations  
-- Milestones & timeline  
-- Team members  
-- Contact information  
+- Edge camera processing
+- YOLOv8-based classification
+- Multi-frame validation
+- Motion, ultrasonic, and thermal sensor fusion
 
----
+### Deterrence
 
-## ✨ Website Features
+- Ultrasonic sound emitters
+- Flashing LED arrays
+- Non-harmful light or laser pulses
+- Staged response escalation
 
-- Fully responsive single-page website  
-- Modern UI with smooth animations  
-- Smooth scrolling navigation  
-- Mobile-friendly hamburger menu  
-- Dedicated research documentation sections  
+### Communication
 
----
+- ESP32 field and relay nodes
+- Long-range LoRa communication
+- Multi-hop routing and retry mechanisms
+- Gateway buffering during intermittent connectivity
 
-## 📁 Project Structure
+### Monitoring
 
-    research-project-website/
-    │
-    ├── index.html                # Main website page
-    ├── css/
-    │   ├── style.css             # Core styling
-    │   ├── domain.css            # Domain section styling
-    │   └── enhanced-sections.css # Animation & layout styling
-    │
-    ├── js/
-    │   ├── main.js               # UI interactions & animations
-    │   └── domain.js             # Domain tab functionality
-    │
-    └── img/                      # Images and assets
+- Real-time event records
+- Plantation activity heatmaps
+- Deterrence performance metrics
+- Predictive analysis and threshold optimization
 
----
+## Technology Stack
 
-## 🚀 Run the Website Locally
+### Website
 
-1. Clone the repository  
-   git clone https://github.com/AselKarunathilaka/research-project-website.git  
+- HTML5
+- CSS3
+- JavaScript
+- Font Awesome
+- AOS animations
+- Netlify Forms
 
-2. Open the project folder  
+### Research System
 
-3. Open **index.html** in any modern web browser  
+- Python and MicroPython
+- ESP32
+- YOLOv8
+- LoRa
+- Node-RED
+- React
+- Docker
 
-No build tools required 🎉
+## Project Structure
 
----
+```text
+research-project-website/
+|-- index.html
+|-- css/
+|   |-- style.css
+|   |-- domain.css
+|   |-- enhanced-sections.css
+|   `-- modern.css
+|-- js/
+|   |-- main.js
+|   `-- domain.js
+|-- img/
+|   |-- wildguard-logo.png
+|   |-- team photographs
+|   `-- supporting project images
+`-- README.md
+```
 
-## 🧰 Technologies Used
+## Run Locally
 
-### 🌐 Frontend
-- HTML5  
-- CSS3  
-- JavaScript  
+No build process is required.
 
-### 🔬 Research Technologies
-- ESP32 & IoT Sensors  
-- LoRaWAN  
-- Node-RED  
-- MongoDB  
-- Python / MicroPython  
-- React Dashboard  
-- Docker  
+1. Clone the repository:
 
----
+   ```bash
+   git clone https://github.com/AselKarunathilaka/research-project-website.git
+   ```
 
-## 🧑‍🎓 Research Team
+2. Open the project directory.
+
+3. Open `index.html` in a modern browser.
+
+For more accurate local testing, serve the directory with a simple static HTTP server.
+
+## Deployment
+
+The website is designed for static deployment on Netlify. The contact form uses Netlify form detection and becomes active after deployment.
+
+## Research Team
 
 Sri Lanka Institute of Information Technology (SLIIT)
 
----
+## Credits
 
-## 🙌 Credits
+- Font Awesome for interface icons
+- Google Fonts for Manrope and Space Grotesk
+- AOS for optional scroll animations
 
-- Font Awesome — Icons  
-- Google Fonts (Poppins) — Typography  
-- AOS.js — Scroll animations  
-- Swiper.js — UI components  
-
----
-
-© 2025 WILDGuard Research Team — SLIIT
-
+Copyright 2026 WILDGuard Research Team.
