@@ -3,24 +3,35 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>WILDGuard - IoT-Based Real-Time Monkey Detection & Deterrence System</title>
+    <meta name="description" content="WILDGuard is an IoT-based real-time monkey detection and humane deterrence system designed to protect Sri Lankan coconut plantations."/>
+    <meta name="theme-color" content="#061a2a"/>
+    <title>WILDGuard | Intelligent Protection for Coconut Plantations</title>
+    <link rel="icon" href="img/wildguard-logo.png" type="image/png"/>
+    <link rel="apple-touch-icon" href="img/wildguard-logo.png"/>
     <link rel="stylesheet" href="css/style.css"/>
     <link rel="stylesheet" href="css/domain.css"/>
     <link rel="stylesheet" href="css/enhanced-sections.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/modern.css"/>
 </head>
 <body>
     <!-- Navigation -->
     <nav class="navbar">
         <div class="container">
             <div class="logo-container">
-                <h1 class="logo">WILDGuard</h1>
-                <span class="logo-accent">Agri-IoT</span>
+                <span class="logo-mark" aria-hidden="true">
+                    <img src="img/wildguard-logo.png" alt=""/>
+                </span>
+                <span class="logo-copy">
+                    <span class="logo">WILDGuard</span>
+                    <span class="logo-accent">Intelligent Agri-IoT</span>
+                </span>
             </div>
-            <ul class="nav-menu">
+            <ul class="nav-menu" id="primary-navigation">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#components">Components</a></li>
@@ -31,28 +42,84 @@
                 <li><a href="#team">Team</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-            <div class="hamburger">
+            <button class="hamburger" type="button" aria-label="Toggle navigation" aria-controls="primary-navigation" aria-expanded="false">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
-            </div>
+            </button>
         </div>
     </nav>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="particles-container" id="particles-js"></div>
         <div class="container">
-            <div class="hero-content" data-aos="fade-up" data-aos-delay="200">
-                <h1 class="animated-title">WILDGuard</h1>
-                <h2>IoT-Based Real-Time Monkey Detection & Deterrence System</h2>
-                <p>Protecting coconut farms with low-cost IoT detection, humane deterrence, and resilient rural connectivity.</p>
-                <div class="hero-buttons">
-                    <a href="#about" class="btn btn-primary">Learn More</a>
-                    <a href="#technologies" class="btn btn-secondary">Our Technology</a>
+            <div class="hero-layout">
+                <div class="hero-content" data-aos="fade-right" data-aos-delay="100">
+                    <div class="project-tag">Research Project</div>
+                    <div class="hero-kicker"><span></span> Research-led crop protection</div>
+                    <h1 class="animated-title">Protecting harvests with <em>intelligent deterrence.</em></h1>
+                    <p class="hero-lead">WILDGuard detects monkey activity in real time, responds humanely, and keeps farmers informed across resilient low-power networks.</p>
+                    <div class="hero-buttons">
+                        <a href="#components" class="btn btn-primary">Explore the system <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+                        <a href="#domain" class="btn btn-secondary">View the research</a>
+                    </div>
+                    <div class="hero-metrics" aria-label="Project highlights">
+                        <div><strong>4</strong><span>Integrated subsystems</span></div>
+                        <div><strong>24/7</strong><span>Field monitoring</span></div>
+                        <div><strong>LoRa</strong><span>Rural connectivity</span></div>
+                    </div>
+                </div>
+                <div class="hero-visual" data-aos="fade-left" data-aos-delay="250">
+                    <div class="visual-chip visual-chip-top"><span></span> Live detection pipeline</div>
+                    <div class="network-visual" aria-hidden="true">
+                        <div class="network-grid"></div>
+                        <div class="scan-beam"></div>
+                        <div class="network-orbit orbit-one"></div>
+                        <div class="network-orbit orbit-two"></div>
+                        <div class="network-link link-camera"></div>
+                        <div class="network-link link-relay"></div>
+                        <div class="network-link link-response"></div>
+                        <div class="network-link link-dashboard"></div>
+                        <div class="network-core">
+                            <span class="core-pulse"></span>
+                            <img src="img/wildguard-logo.png" alt=""/>
+                            <strong>WILDGuard Core</strong>
+                            <small>Detection verified</small>
+                        </div>
+                        <div class="network-node node-camera">
+                            <i class="fas fa-camera"></i>
+                            <span>Edge vision</span>
+                            <small>96% confidence</small>
+                        </div>
+                        <div class="network-node node-relay">
+                            <i class="fas fa-broadcast-tower"></i>
+                            <span>LoRa relay</span>
+                            <small>Mesh online</small>
+                        </div>
+                        <div class="network-node node-response">
+                            <i class="fas fa-volume-up"></i>
+                            <span>Deterrence</span>
+                            <small>Humane response</small>
+                        </div>
+                        <div class="network-node node-dashboard">
+                            <i class="fas fa-chart-line"></i>
+                            <span>Analytics</span>
+                            <small>Live farmer insight</small>
+                        </div>
+                        <div class="field-status">
+                            <span><i></i> Sensors online</span>
+                            <span><i></i> LoRa connected</span>
+                            <span><i></i> Response ready</span>
+                        </div>
+                    </div>
+                    <div class="visual-chip visual-chip-bottom"><i class="fas fa-shield-alt" aria-hidden="true"></i> Humane by design</div>
                 </div>
             </div>
         </div>
+        <a class="hero-scroll" href="#about" aria-label="Scroll to project overview">
+            <span>Discover the project</span>
+            <i class="fas fa-arrow-down" aria-hidden="true"></i>
+        </a>
     </section>
 
     <!-- About Section -->
@@ -66,14 +133,14 @@
             
             <div class="about-content">
                 <div class="about-image" data-aos="fade-right" data-aos-delay="100">
-                    <img src="img/about1.png" alt="Coconut plantation monitoring by IoT sensors"/>
+                    <img src="img/wildguard-logo.png" alt="WILDGuard official shield and monkey logo"/>
                     <div class="about-image-overlay">
                         <div class="pulse-circle"></div>
                     </div>
                 </div>
                 
                 <div class="about-text" data-aos="fade-left" data-aos-delay="200">
-                    <p>Monkey depredation causes massive losses in Sri Lankan coconut plantations (hundreds of millions of coconuts annually). WILDGuard is built to reduce crop damage by automatically detecting monkey presence and activating humane deterrents — all via a low-cost, battery-efficient IoT network.</p>
+                    <p>Monkey depredation causes massive losses in Sri Lankan coconut plantations. WILDGuard is built to reduce crop damage by automatically detecting monkey presence and activating humane deterrents &mdash; all through a low-cost, battery-efficient IoT network.</p>
                     
                     <p>Designed for rural deployment, the system uses motion, ultrasonic and thermal sensing combined with edge analytics to discriminate monkeys from other animals and false alarms. When a confirmed detection occurs, WILDGuard triggers a staged deterrence response (ultrasound, flashing lights, laser pulses) and logs activity for farmer review.</p>
                     
@@ -189,7 +256,7 @@
     <div class="domain-content">
       <!-- Literature Review Tab -->
       <div id="literature-review" class="domain-pane active">
-        <h3>🧩 1. Literature Review</h3>
+        <h3><span class="domain-number">01</span> Literature Review</h3>
         <p>
           Coconut farming in Sri Lanka has been severely impacted by wildlife, particularly monkeys such as the toque macaque.
           Studies show that nearly <strong>7% of the annual coconut yield</strong> is lost due to animal interference, resulting in
@@ -201,13 +268,13 @@
           classification, have shown promise. However, existing systems often suffer from high cost, limited rural connectivity, and
           poor real-time performance. Research by Muthumani (2023) and A.S.S et al. (2024) demonstrates the feasibility of
           IoT-based animal detection but emphasizes the need for low-power, scalable, and sustainable solutions adaptable to
-          Sri Lanka’s agricultural landscape.
+          Sri Lanka's agricultural landscape.
         </p>
       </div>
 
       <!-- Research Problem Tab -->
       <div id="research-problem" class="domain-pane">
-        <h3>💡 2. Research Problem</h3>
+        <h3><span class="domain-number">02</span> Research Problem</h3>
         <p>
           Coconut plantations across 21 districts face continuous destruction caused by monkeys, leading to reduced yield and
           financial instability among rural farmers. Despite attempts using traditional deterrents (e.g., scarecrows, firecrackers),
@@ -218,20 +285,20 @@
           and responding with humane deterrent mechanisms. Therefore, the problem addressed by this research is:
         </p>
         <blockquote>
-          “How can an IoT-based real-time system detect and deter monkeys in coconut plantations effectively while ensuring
-          safety, sustainability, and affordability for local farmers?”
+          &ldquo;How can an IoT-based real-time system detect and deter monkeys in coconut plantations effectively while ensuring
+          safety, sustainability, and affordability for local farmers?&rdquo;
         </blockquote>
       </div>
 
       <!-- Objectives Tab -->
       <div id="objectives" class="domain-pane">
-        <h3>🎯 3. Objectives</h3>
+        <h3><span class="domain-number">03</span> Objectives</h3>
 
         <div class="domain-section">
           <h4>3.1 Main Objective</h4>
           <ul>
             <li>
-              Design and deploy <strong>WILDGuard</strong> — an IoT-based detection and deterrence system to reduce
+              Design and deploy <strong>WILDGuard</strong> &mdash; an IoT-based detection and deterrence system to reduce
               monkey-related damage in coconut plantations while remaining humane and cost-effective.
             </li>
           </ul>
@@ -251,7 +318,7 @@
 
       <!-- Methodology Tab -->
       <div id="methodology" class="domain-pane">
-        <h3>🧠 4. Methodology</h3>
+        <h3><span class="domain-number">04</span> Methodology</h3>
         <ul>
           <li><strong>Requirement Analysis:</strong> Study monkey behavior, environmental conditions, and farmer needs.</li>
           <li>
@@ -270,13 +337,37 @@
           </li>
         </ul>
 
-        <!-- Keep/replace this image as needed -->
-        <img src="img/graph2.png" alt="WILDGuard Methodology Diagram" class="domain-image" />
+        <div class="methodology-flow" aria-label="WILDGuard research methodology">
+          <div class="methodology-step">
+            <span>01</span>
+            <i class="fas fa-search"></i>
+            <strong>Observe</strong>
+            <small>Study field conditions and farmer requirements.</small>
+          </div>
+          <div class="methodology-step">
+            <span>02</span>
+            <i class="fas fa-microchip"></i>
+            <strong>Build</strong>
+            <small>Integrate sensing, edge AI, LoRa, and deterrence.</small>
+          </div>
+          <div class="methodology-step">
+            <span>03</span>
+            <i class="fas fa-flask"></i>
+            <strong>Test</strong>
+            <small>Run plantation trials and measure performance.</small>
+          </div>
+          <div class="methodology-step">
+            <span>04</span>
+            <i class="fas fa-chart-line"></i>
+            <strong>Optimize</strong>
+            <small>Refine thresholds using evidence and feedback.</small>
+          </div>
+        </div>
       </div>
 
       <!-- Research Gap Tab -->
       <div id="research-gap" class="domain-pane">
-        <h3>🔍 5. Research Gap</h3>
+        <h3><span class="domain-number">05</span> Research Gap</h3>
         <p>
           While previous studies introduced IoT-based animal detection systems, most lacked comprehensive deterrence, real-time
           responsiveness, or low-power communication suitable for rural areas. Few solutions combine machine learning,
@@ -303,53 +394,35 @@
                 <p class="section-subtitle">Hardware, networking & software stack</p>
             </div>
             
-            <div class="tech-slider swiper" data-aos="fade-up" data-aos-delay="200">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="tech-item">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python"/>
-                            <h3>Python</h3>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="tech-item">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/micropython/micropython-original.svg" alt="MicroPython"/>
-                            <h3>MicroPython</h3>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="tech-item">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/arduino/arduino-original.svg" alt="ESP32/Arduino"/>
-                            <h3>ESP32</h3>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="tech-item">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/lorawan/lorawan-original.svg" alt="LoRaWAN" onerror="this.style.display='none'"/>
-                            <h3>LoRa</h3>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="tech-item">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node-RED"/>
-                            <h3>Node-RED</h3>
-                        </div>
-                    </div>
-                    
-                    <div class="swiper-slide">
-                        <div class="tech-item">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React"/>
-                            <h3>React</h3>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="tech-item">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker"/>
-                            <h3>Docker</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-pagination"></div>
+            <div class="tech-stack" data-aos="fade-up" data-aos-delay="150">
+                <article class="tech-item">
+                    <div class="tech-glyph tech-glyph-python">Py</div>
+                    <div><h3>Python</h3><span>AI & analytics</span></div>
+                </article>
+                <article class="tech-item">
+                    <div class="tech-glyph tech-glyph-micro">uPy</div>
+                    <div><h3>MicroPython</h3><span>Edge firmware</span></div>
+                </article>
+                <article class="tech-item">
+                    <div class="tech-glyph tech-glyph-esp">32</div>
+                    <div><h3>ESP32</h3><span>Sensor nodes</span></div>
+                </article>
+                <article class="tech-item">
+                    <div class="tech-glyph tech-glyph-lora"><i class="fas fa-broadcast-tower" aria-hidden="true"></i></div>
+                    <div><h3>LoRa</h3><span>Long-range mesh</span></div>
+                </article>
+                <article class="tech-item">
+                    <div class="tech-glyph tech-glyph-node"><i class="fas fa-project-diagram" aria-hidden="true"></i></div>
+                    <div><h3>Node-RED</h3><span>Event automation</span></div>
+                </article>
+                <article class="tech-item">
+                    <div class="tech-glyph tech-glyph-react"><i class="fas fa-chart-line" aria-hidden="true"></i></div>
+                    <div><h3>React</h3><span>Farmer dashboard</span></div>
+                </article>
+                <article class="tech-item">
+                    <div class="tech-glyph tech-glyph-docker"><i class="fas fa-cubes" aria-hidden="true"></i></div>
+                    <div><h3>Docker</h3><span>Portable services</span></div>
+                </article>
             </div>
             
             <div class="tech-features" data-aos="fade-up" data-aos-delay="300">
@@ -500,7 +573,7 @@
                         <div class="milestone-date">April 2025</div>
                         <h3 class="milestone-title">Testing & Evaluation</h3>
                         <p class="milestone-description">Performance evaluation, false-positive tuning, and optimization of deterrence strategy.</p>
-                        <span class="milestone-status status-in-progress">In Progress</span>
+                        <span class="milestone-status status-completed">Completed</span>
                     </div>
                     <div class="milestone-dot"></div>
                 </div>
@@ -510,7 +583,7 @@
                         <div class="milestone-date">May 2025</div>
                         <h3 class="milestone-title">Project Completion</h3>
                         <p class="milestone-description">Final documentation, dissemination to stakeholders, and roadmap for scale-up.</p>
-                        <span class="milestone-status status-upcoming">Upcoming</span>
+                        <span class="milestone-status status-completed">Completed</span>
                     </div>
                     <div class="milestone-dot"></div>
                 </div>
@@ -530,7 +603,7 @@
             <div class="team-grid" data-aos="fade-up" data-aos-delay="200">
                 <div class="team-member">
                     <div class="member-image">
-                        <img src="img/picture2.jpg" alt="Dr. Kapila Disanayake"/>
+                        <img src="img/Picture2.jpg" alt="Ms. Chathurangika Kahandawaarachchi"/>
                     </div>
                     <h3>Ms. Chathurangika Kahandawaarachchi</h3>
                     <p>Supervisor</p>
@@ -541,7 +614,7 @@
                 
                 <div class="team-member">
                     <div class="member-image">
-                        <img src="img/picture3.jpg" alt="Dr. Jayan De Silva"/>
+                        <img src="img/Picture3.jpg" alt="Mr. Jaliya Wijayaraja"/>
                     </div>
                     <h3>Mr. Jaliya Wijayaraja</h3>
                     <p>External Supervisor</p>
@@ -549,7 +622,7 @@
 
                 <div class="team-member">
                     <div class="member-image">
-                        <img src="img/picture4.jpg" alt="Arangallage C.M."/>
+                        <img src="img/Picture4.jpg" alt="Jansingha S.D.J.K"/>
                     </div>
                     <h3>Jansingha S.D.J.K</h3>
                     <p>Researcher (Detection)</p>
@@ -559,7 +632,7 @@
                 <div class="team-member">
                     <div class="member-image">
                         
-                        <img src="img/asel.jpeg" alt="Polhengoda P.M.Y.Y."/>
+                        <img src="img/asel.jpeg" alt="Karunathilaka K.W.A.A.S"/>
                     </div>
                     <h3>KARUNATHILAKA K.W.A.A.S</h3>
                     <p>Researcher (Deterrent)</p>
@@ -568,7 +641,7 @@
                 
                 <div class="team-member">
                     <div class="member-image">
-                        <img src="img/geeth.jpg" alt="W.R.S Virukshi"/>
+                        <img src="img/geeth.jpg" alt="Wickramasinghe B.G.A"/>
                     </div>
                     <h3>Wickramasinghe B.G.A</h3>
                     <p>Researcher (IOT Communication)</p>
@@ -577,7 +650,7 @@
                 
                 <div class="team-member">
                     <div class="member-image">
-                        <img src="img/thaarusha.jpeg" alt="Sandeeptha P.K."/>
+                        <img src="img/thaarusha.jpeg" alt="Bandara D.M.E.K"/>
                     </div>
                     <h3>Bandara D.M.E.K</h3>
                     <p>Researcher (Monitoring)</p>
@@ -632,33 +705,31 @@
                     </div>
                     
                     <div class="social-links">
-                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                        <a href="https://github.com/AselKarunathilaka/research-project-website" target="_blank" rel="noreferrer" class="social-link" aria-label="View the WILDGuard source code on GitHub"><i class="fab fa-github" aria-hidden="true"></i></a>
                     </div>
                 </div>
                 
                 <div class="contact-form">
-                    <form>
+                    <form name="contact" method="POST" data-netlify="true">
+                        <input type="hidden" name="form-name" value="contact"/>
                         <div class="form-group">
                             <label for="name" class="form-label">Full Name</label>
-                            <input type="text" id="name" class="form-control" placeholder="Enter your name" required/>
+                            <input type="text" id="name" name="name" class="form-control" placeholder="Enter your name" required/>
                         </div>
                         
                         <div class="form-group">
                             <label for="email" class="form-label">Email Address</label>
-                            <input type="email" id="email" class="form-control" placeholder="Enter your email" required/>
+                            <input type="email" id="email" name="email" class="form-control" placeholder="Enter your email" required/>
                         </div>
                         
                         <div class="form-group">
                             <label for="subject" class="form-label">Subject</label>
-                            <input type="text" id="subject" class="form-control" placeholder="Enter subject" required/>
+                            <input type="text" id="subject" name="subject" class="form-control" placeholder="Enter subject" required/>
                         </div>
                         
                         <div class="form-group">
                             <label for="message" class="form-label">Message</label>
-                            <textarea id="message" class="form-control" placeholder="Enter your message" required></textarea>
+                            <textarea id="message" name="message" class="form-control" placeholder="Enter your message" required></textarea>
                         </div>
                         
                         <button type="submit" class="submit-btn">Send Message</button>
@@ -672,20 +743,14 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <p>&copy; 2025 WILDGuard. All Rights Reserved.</p>
-                <div class="social-links">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                </div>
+                <div class="footer-brand"><strong>WILDGuard</strong><span>Research for resilient agriculture.</span></div>
+                <p>&copy; <span class="current-year">2026</span> WILDGuard Research Team. All rights reserved.</p>
+                <a href="#home" class="back-to-top">Back to top <i class="fas fa-arrow-up" aria-hidden="true"></i></a>
             </div>
         </div>
     </footer>
     
-    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/domain.js"></script>
 </body>
