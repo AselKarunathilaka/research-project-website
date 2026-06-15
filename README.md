@@ -16,7 +16,7 @@ Monkey intrusions cause significant crop damage and financial losses for coconut
 - Support long-range rural communication through LoRa
 - Provide useful alerts, activity records, and analytics for farmers
 
-## Website Redesign
+## Latest Website Changes
 
 The website received a complete visual and technical overhaul in June 2026.
 
@@ -24,18 +24,18 @@ The website received a complete visual and technical overhaul in June 2026.
 
 - Modern midnight-blue, cyan, green, and amber design system
 - Responsive research-focused hero section
-- Official WILDGuard shield-and-monkey logo and favicon
-- Pure CSS animated detection network replacing the previous system SVG
-- Animated scanning beam, network grid, connection rings, and data paths
-- Floating cards for edge vision, LoRa communication, deterrence, and analytics
+- Exact official WILDGuard shield-and-monkey artwork used for the navbar logo, favicon, touch icon, and project branding
+- Pure CSS animated detection network replacing the former static system SVG
+- Animated scanning beam, drifting field grid, rotating connection rings, and traveling data signals
+- Central WILDGuard network core connected to edge vision, LoRa relay, humane deterrence, and analytics nodes
 - Redesigned project cards, research tabs, documents, team, milestones, and contact sections
 - Improved team photo presentation without cropped faces
 
 ### Content Improvements
 
 - All project milestones are marked as completed
-- Duplicate milestone timeline markers were removed
-- Methodology is presented as an Observe, Build, Test, and Optimize workflow
+- Duplicate milestone markers were removed, leaving one clear completion indicator per phase
+- Methodology is presented through a responsive Observe, Build, Test, and Optimize process
 - Broken image paths and case-sensitive Netlify asset references were corrected
 - Unreliable remote technology icons were replaced with stable interface elements
 - Research Project identification is shown prominently at the beginning of the page
@@ -119,6 +119,7 @@ research-project-website/
 |   |-- wildguard-logo.png
 |   |-- team photographs
 |   `-- supporting project images
+|-- LICENSE
 `-- README.md
 ```
 
@@ -151,5 +152,9 @@ Sri Lanka Institute of Information Technology (SLIIT)
 - Font Awesome for interface icons
 - Google Fonts for Manrope and Space Grotesk
 - AOS for optional scroll animations
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
 
 Copyright 2026 WILDGuard Research Team.
