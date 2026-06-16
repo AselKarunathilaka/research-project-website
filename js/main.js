@@ -77,4 +77,105 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const year = document.querySelector('.current-year');
     if (year) year.textContent = new Date().getFullYear();
+
+    const heroSection = document.querySelector('.hero');
+    const matrixCanvas = document.querySelector('.hero-matrix-bg');
+
+    if (heroSection && matrixCanvas && matrixCanvas.getContext) {
+        const ctx = matrixCanvas.getContext('2d');
+        if (ctx) {
+            const state = {
+                width: 0,
+                height: 0,
+                dpr: Math.max(1, Math.min(window.devicePixelRatio || 1, 2)),
+                fontSize: 16,
+                columns: 0,
+                drops: []
+            };
+
+            const glyphs = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ@#$%&*+-<>/\\|';
+            let animationFrameId = 0;
+            let observer;
+
+            const buildDrops = () => {
+                state.columns = Math.max(1, Math.floor(state.width / state.fontSize));
+                state.drops = Array.from({ length: state.columns }, () => Math.random() * state.height / state.fontSize);
+            };
+
+            const resizeCanvas = () => {
+                const rect = heroSection.getBoundingClientRect();
+                if (!rect.width || !rect.height) return;
+
+                state.dpr = Math.max(1, Math.min(window.devicePixelRatio || 1, 2));
+                state.width = rect.width;
+                state.height = rect.height;
+                matrixCanvas.width = Math.floor(rect.width * state.dpr);
+                matrixCanvas.height = Math.floor(rect.height * state.dpr);
+                matrixCanvas.style.width = `${rect.width}px`;
+                matrixCanvas.style.height = `${rect.height}px`;
+                ctx.setTransform(state.dpr, 0, 0, state.dpr, 0, 0);
+                ctx.font = `${state.fontSize}px monospace`;
+                ctx.textBaseline = 'top';
+                ctx.lineCap = 'round';
+                buildDrops();
+            };
+
+            const drawFrame = () => {
+                ctx.fillStyle = 'rgba(0, 0, 0, 0.05)';
+                ctx.fillRect(0, 0, state.width, state.height);
+
+                ctx.font = `${state.fontSize}px monospace`;
+                ctx.shadowColor = 'rgba(0, 255, 200, 0.24)';
+                ctx.shadowBlur = 6;
+
+                for (let column = 0; column < state.columns; column += 1) {
+                    const glyph = glyphs.charAt(Math.floor(Math.random() * glyphs.length));
+                    const x = column * state.fontSize;
+                    const y = state.drops[column] * state.fontSize;
+
+                    ctx.fillStyle = 'rgba(0, 255, 200, 0.15)';
+                    ctx.fillText(glyph, x, y);
+
+                    if (Math.random() > 0.975) {
+                        state.drops[column] = 0;
+                    }
+
+                    state.drops[column] += 0.55;
+
+                    if (y > state.height && Math.random() > 0.985) {
+                        state.drops[column] = 0;
+                    }
+                }
+
+                animationFrameId = window.requestAnimationFrame(drawFrame);
+            };
+
+            resizeCanvas();
+
+            const handleResize = () => {
+                resizeCanvas();
+            };
+
+            window.addEventListener('resize', handleResize, { passive: true });
+
+            if ('ResizeObserver' in window) {
+                observer = new ResizeObserver(() => {
+                    resizeCanvas();
+                });
+                observer.observe(heroSection);
+            }
+
+            if (!prefersReducedMotion) {
+                animationFrameId = window.requestAnimationFrame(drawFrame);
+            } else {
+                ctx.fillStyle = 'rgba(0, 0, 0, 0.05)';
+                ctx.fillRect(0, 0, state.width, state.height);
+            }
+
+            window.addEventListener('beforeunload', () => {
+                window.cancelAnimationFrame(animationFrameId);
+                if (observer) observer.disconnect();
+            });
+        }
+    }
 });
